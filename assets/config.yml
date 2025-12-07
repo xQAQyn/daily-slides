@@ -1,0 +1,20 @@
+title: "Slide Hub"
+subtitle: "Presentation Hub"
+# ... 其他顶部配置 ...
+
+services:
+  - name: "CMSC 5719"
+    icon: "fas fa-briefcase"
+    items:
+      - name: "project mid report"
+        logo: "assets/icons/logo.svg" # 可选：如果没有图标，会显示默认样式
+        subtitle: "2025 Year End"
+        # 重点：路径指向 decks 下的具体子目录
+        url: "decks/CMSC 5720/index.html"
+        target: "_blank" # 建议在新标签页打开 PPT，体验更好
+
+      # - name: "技术架构评审"
+      #   icon: "fas fa-layer-group" # 使用 FontAwesome 图标
+      #   subtitle: "Architecture Review"
+      #   url: "decks/slide-b/index.html"
+      #   target: "_blank"
