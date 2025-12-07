@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Speculative Decoding - Interim Report</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/theme/white.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/highlight/zenburn.min.css">
+
+    <style>
+        /* 全局样式微调 */
+        .reveal h1, .reveal h2, .reveal h3, .reveal h4 { text-transform: none; }
+        .text-left { text-align: left; }
+        .small-text { font-size: 0.6em; }
+        .highlight-box { background-color: #f0f8ff; border-left: 5px solid #007bff; padding: 10px; margin-top: 20px; }
+        
+        /* 双栏布局类 */
+        .two-col { display: flex; justify-content: space-between; align-items: flex-start; }
+        .col { flex: 1; padding: 10px; }
+    </style>
+</head>
+<body>
+
+<div class="reveal">
+    <div class="slides">
+        
+        <section data-markdown="slides/01_intro.md" 
+                 data-separator="^\n---\n" 
+                 data-separator-vertical='^\r?\n--\r?\n$'></section>
+
+        <section data-markdown="slides/02_background.md" 
+                 data-separator="^\n---\n" 
+                 data-separator-vertical='^\r?\n--\r?\n$'></section>
+
+        <section data-markdown="slides/03_architecture.md" 
+                 data-separator="^\n---\n" 
+                 data-separator-vertical='^\r?\n--\r?\n$'></section>
+
+        <section data-markdown="slides/04_progress.md" 
+                 data-separator="^\n---\n" 
+                 data-separator-vertical='^\r?\n--\r?\n$'></section>
+
+        <section data-markdown="slides/05_future_eagle.md" 
+                 data-separator="^\n---\n" 
+                 data-separator-vertical='^\r?\n--\r?\n$'></section>
+
+        <section data-markdown="slides/06_conclusion.md" 
+                 data-separator="^\n---\n" 
+                 data-separator-vertical='^\r?\n--\r?\n$'></section>
+
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/markdown/markdown.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/highlight/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/math/math.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/notes/notes.min.js"></script>
+
+<script>
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        center: true,
+        hash: true,
+        // 必须加载 Markdown 插件
+        plugins: [ RevealMarkdown, RevealHighlight, RevealMath.KaTeX, RevealNotes ]
+    });
+</script>
+</body>
+</html>
